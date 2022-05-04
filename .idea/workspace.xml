@@ -5,14 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1a2471bd-a46b-4c3f-8a07-d9a0faf83952" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/hooks/usePosts.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/ssr/[id].tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hooks/useAddBodyClass.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/_documents.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/SpoqaHanSansNeo-Regular.otf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/yeomi.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/yeomi.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hooks/usePosts.ts" beforeDir="false" afterPath="$PROJECT_DIR$/hooks/usePosts.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/_app.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/_app.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/ssr/[id].tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/ssr/[id].tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/globals.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles/globals.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tailwind.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/tailwind.config.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,8 +26,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="TypeScript File" />
         <option value="TypeScript JSX File" />
+        <option value="TypeScript File" />
       </list>
     </option>
   </component>
@@ -63,6 +67,9 @@
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/assets/fonts" />
+    </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -78,7 +85,7 @@
       <workItem from="1651401344198" duration="1572000" />
       <workItem from="1651476198917" duration="3649000" />
       <workItem from="1651479875770" duration="912000" />
-      <workItem from="1651660818288" duration="3407000" />
+      <workItem from="1651660818288" duration="9237000" />
     </task>
     <servers />
   </component>

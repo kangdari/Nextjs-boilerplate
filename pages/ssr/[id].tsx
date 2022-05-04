@@ -10,6 +10,7 @@ interface Post {
   id: number;
 }
 
+// todo 예제 - 삭제
 function Ssr() {
   const { isLoading, error, data } = usePosts<Post[], Error>(10);
   const router = useRouter();

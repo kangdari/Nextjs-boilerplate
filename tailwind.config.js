@@ -1,3 +1,4 @@
+const defaultTheme = require('tailwindcss');
 const px0_10 = { ...Array.from(Array(11)).map((_, i) => `${i}px`) };
 const px0_100 = { ...Array.from(Array(101)).map((_, i) => `${i}px`) };
 const px0_200 = { ...Array.from(Array(201)).map((_, i) => `${i}px`) };
@@ -42,6 +43,9 @@ module.exports = {
         'blue-7': '#2EA8F7',
         'blue-8': '#0C98F3',
       },
+    },
+    fontFamily: {
+      spoqa: 'Spoqa Han Sans Neo',
     },
   },
   plugins: [],
