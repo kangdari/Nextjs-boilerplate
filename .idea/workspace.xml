@@ -5,16 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1a2471bd-a46b-4c3f-8a07-d9a0faf83952" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.env.development" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.env.production" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/store/actions/users.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/store/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/store/interface/post.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/store/interface/user.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/store/slice/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/store/slice/post.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/store/slice/users.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hooks/usePosts.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/ssr/[id].tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/_app.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/_app.tsx" afterDir="false" />
@@ -29,6 +23,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="TypeScript File" />
+        <option value="TypeScript JSX File" />
       </list>
     </option>
   </component>
@@ -83,6 +78,7 @@
       <workItem from="1651401344198" duration="1572000" />
       <workItem from="1651476198917" duration="3649000" />
       <workItem from="1651479875770" duration="912000" />
+      <workItem from="1651660818288" duration="3407000" />
     </task>
     <servers />
   </component>
@@ -99,6 +95,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
