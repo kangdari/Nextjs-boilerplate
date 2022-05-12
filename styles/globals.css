@@ -1,3 +1,61 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+/* button */
+.btn-56 {
+    @apply text-l2 px-24 py-16 rounded-14 cursor-pointer;
+}
+
+.btn-48 {
+    @apply text-l2 px-18 py-12 rounded-12 cursor-pointer;
+}
+
+.btn-32 {
+    @apply text-l4 px-10 py-7 rounded-8 cursor-pointer;
+}
+
+.btn-24 {
+    @apply text-l5 px-10 py-5 rounded-6 cursor-pointer;
+}
+
+.btn-blue {
+    @apply text-white bg-blue-7 hover:bg-blue-5 active:bg-blue-8;
+}
+
+.btn-blue-border {
+    @apply text-blue-7 bg-white border-1 border-blue-7 hover:border-blue-5 hover:text-blue-5 active:border-blue-7 active:text-blue-8
+}
+
+.btn-skyBlue {
+    @apply text-blue-7 bg-blue-2 hover:bg-blue-2 hover:text-blue-6 active:text-blue-7 active:bg-blue-3;
+}
+
+.btn-black {
+    @apply text-white bg-grey-10 hover:bg-grey-7 active:bg-grey-11;
+}
+
+.btn-grey {
+    @apply text-grey-8 bg-grey-2 hover:bg-grey-2 hover:text-grey-6 active:bg-grey-3 active:text-grey-6;
+}
+
+.btn-grey-border {
+    @apply text-grey-8 bg-white border-1 border-grey-6 hover:border-grey-6 hover:text-grey-6 active:border-grey-11 active:text-grey-11
+}
+
+.btn-lightGrey {
+    @apply text-grey-8 bg-white hover:bg-grey-1 hover:text-grey-6 active:bg-grey-1 active:text-grey-6;
+}
+
+.disabled-grey {
+    @apply bg-grey-4 hover:bg-grey-4
+}
+
+.disabled-lightGrey {
+    @apply bg-grey-2 hover:bg-grey-2
+}
+
+.disable-border {
+    @apply border-grey-4 hover:border-grey-4 text-grey-4 hover:text-grey-4 active:text-grey-4
+}
