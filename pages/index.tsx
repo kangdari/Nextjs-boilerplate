@@ -1,6 +1,7 @@
 import type { NextPage } from 'next';
 import { useEffect, useRef } from 'react';
 import Button from '@components/Button';
+import KaKaoLoginButton from '@components/Button/KaKaoLoginButton';
 
 const Home: NextPage = () => {
   const ref = useRef<HTMLButtonElement>(null);
@@ -11,6 +12,7 @@ const Home: NextPage = () => {
     <div>
       <div className='flex flex-col'>
         <h1 className='text-50'>h1h1h11h</h1>
+        <KaKaoLoginButton />
 
         <div className='mb-10 flex w-700 items-end justify-between'>
           <Button onClick={onClick} type='blue' size={56}>
