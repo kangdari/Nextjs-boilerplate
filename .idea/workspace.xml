@@ -5,10 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1a2471bd-a46b-4c3f-8a07-d9a0faf83952" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/components/Button/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/types/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/utils/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/icon/rightArrow.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Button/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Button/index.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/styles/globals.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles/globals.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tailwind.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/tailwind.config.js" afterDir="false" />
@@ -65,6 +64,7 @@
       <recent name="$PROJECT_DIR$" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/public/icon" />
       <recent name="$PROJECT_DIR$/assets/fonts" />
     </key>
   </component>
@@ -88,7 +88,9 @@
       <workItem from="1652145729862" duration="65000" />
       <workItem from="1652249222016" duration="8129000" />
       <workItem from="1652263652529" duration="186000" />
-      <workItem from="1652332829855" duration="8061000" />
+      <workItem from="1652332829855" duration="9940000" />
+      <workItem from="1652406676359" duration="2738000" />
+      <workItem from="1652409443443" duration="2037000" />
     </task>
     <servers />
   </component>

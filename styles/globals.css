@@ -2,8 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-
-/* button */
 .btn-56 {
     @apply text-l2 px-24 py-16 rounded-14 cursor-pointer;
 }
@@ -48,14 +46,29 @@
     @apply text-grey-8 bg-white hover:bg-grey-1 hover:text-grey-6 active:bg-grey-1 active:text-grey-6;
 }
 
+
+.btn-text {
+    @apply border-b-1 text-grey-11 border-grey-11 hover:text-grey-8 hover:border-grey-8 active:text-grey-12 active:border-grey-12 cursor-pointer
+}
+
+
+.btn-arrow {
+    @apply text-grey-11  hover:text-grey-8  active:text-grey-12  cursor-pointer
+}
+
+
 .disabled-grey {
-    @apply bg-grey-4 hover:bg-grey-4
+    @apply text-white bg-grey-4 hover:bg-grey-4
 }
 
 .disabled-lightGrey {
-    @apply bg-grey-2 hover:bg-grey-2
+    @apply text-grey-4 hover:text-grey-4 active:text-grey-4 bg-grey-2 hover:bg-grey-2
 }
 
-.disable-border {
+.disabled-border {
     @apply border-grey-4 hover:border-grey-4 text-grey-4 hover:text-grey-4 active:text-grey-4
+}
+
+.disabled-text {
+    @apply text-grey-4 hover:text-grey-4 active:text-grey-4 border-grey-4 hover:border-grey-4 active:border-grey-4
 }

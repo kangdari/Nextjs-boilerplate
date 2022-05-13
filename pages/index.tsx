@@ -12,134 +12,166 @@ const Home: NextPage = () => {
       <div className='flex flex-col'>
         <h1 className='text-50'>h1h1h11h</h1>
 
-        <div className='mb-10 flex items-end'>
-          <Button ref={ref} onClick={onClick} className='btn-56 btn-blue'>
-            버튼이지롱
+        <div className='mb-10 flex w-700 items-end justify-between'>
+          <Button onClick={onClick} type='blue' size={56}>
+            Button
           </Button>
 
-          <Button onClick={onClick} disabled className='btn-56 btn-blue'>
-            disabled
+          <Button onClick={onClick} type='blue' size={48}>
+            Button
           </Button>
 
-          <button onClick={onClick} disabled className='btn-48 btn-blue'>
-            button
-          </button>
+          <Button onClick={onClick} type='blue' size={32}>
+            Button
+          </Button>
 
-          <button onClick={onClick} disabled className='btn-32 btn-blue'>
-            button
-          </button>
-
-          <button onClick={onClick} disabled className='btn-24 btn-blue'>
-            button
-          </button>
+          <Button onClick={onClick} type='blue' size={24}>
+            Button
+          </Button>
         </div>
 
-        <div className='mb-10 flex items-end'>
-          <button onClick={onClick} disabled className='btn-56 btn-black'>
-            button
-          </button>
+        <div className='mb-10 flex w-700 items-end justify-between'>
+          <Button onClick={onClick} type='black' size={56}>
+            Button
+          </Button>
 
-          <button onClick={onClick} disabled className='btn-48 btn-black'>
-            button
-          </button>
+          <Button onClick={onClick} type='black' size={48}>
+            Button
+          </Button>
 
-          <button onClick={onClick} disabled className='btn-32 btn-black'>
-            button
-          </button>
+          <Button onClick={onClick} type='black' size={32}>
+            Button
+          </Button>
 
-          <button onClick={onClick} disabled className='btn-24 btn-black'>
-            button
-          </button>
+          <Button onClick={onClick} type='black' size={24}>
+            Button
+          </Button>
         </div>
 
-        <div className='mb-10 flex items-end'>
-          <button onClick={onClick} disabled className='btn-56 btn-grey'>
-            button
-          </button>
+        <div className='mb-10 flex w-700 items-end justify-between'>
+          <Button onClick={onClick} type='grey' size={56}>
+            Button
+          </Button>
 
-          <button onClick={onClick} disabled className='btn-48 btn-grey'>
-            button
-          </button>
+          <Button onClick={onClick} type='grey' size={48}>
+            Button
+          </Button>
 
-          <button onClick={onClick} disabled className='btn-32 btn-grey'>
-            button
-          </button>
+          <Button onClick={onClick} type='grey' size={32}>
+            Button
+          </Button>
 
-          <button onClick={onClick} disabled className='btn-24 btn-grey'>
-            button
-          </button>
+          <Button onClick={onClick} type='grey' size={24}>
+            Button
+          </Button>
         </div>
 
-        <div className='mb-10 flex items-end'>
-          <button onClick={onClick} disabled className='btn-56 btn-skyBlue'>
-            button
-          </button>
+        <div className='mb-10 flex w-700 items-end justify-between'>
+          <Button onClick={onClick} type='skyBlue' size={56}>
+            Button
+          </Button>
 
-          <button onClick={onClick} disabled className='btn-48 btn-skyBlue'>
-            button
-          </button>
+          <Button onClick={onClick} type='skyBlue' size={48}>
+            Button
+          </Button>
 
-          <button onClick={onClick} disabled className='btn-32 btn-skyBlue'>
-            button
-          </button>
+          <Button onClick={onClick} type='skyBlue' size={32}>
+            Button
+          </Button>
 
-          <button onClick={onClick} disabled className='btn-24 btn-skyBlue'>
-            button
-          </button>
+          <Button onClick={onClick} type='skyBlue' size={24}>
+            Button
+          </Button>
         </div>
 
-        <div className='mb-10 flex items-end'>
-          <button onClick={onClick} disabled className='btn-56 btn-lightGrey'>
-            button
-          </button>
+        <div className='mb-10 flex w-700 items-end justify-between'>
+          <Button onClick={onClick} type='lightGrey' size={56}>
+            Button
+          </Button>
 
-          <button onClick={onClick} disabled className='btn-48 btn-lightGrey'>
-            button
-          </button>
+          <Button onClick={onClick} type='lightGrey' size={48}>
+            Button
+          </Button>
 
-          <button onClick={onClick} disabled className='btn-32 btn-lightGrey'>
-            button
-          </button>
+          <Button onClick={onClick} type='lightGrey' size={32}>
+            Button
+          </Button>
 
-          <button onClick={onClick} disabled className='btn-24 btn-lightGrey'>
-            button
-          </button>
+          <Button onClick={onClick} type='lightGrey' size={24}>
+            Button
+          </Button>
         </div>
 
-        <div className='mb-10 flex items-end'>
-          <button onClick={onClick} disabled className='btn-56 btn-blue-border'>
-            button
-          </button>
+        <div className='mb-10 flex w-700 items-end justify-between'>
+          <Button onClick={onClick} type='blue-border' size={56}>
+            Button
+          </Button>
 
-          <button onClick={onClick} disabled className='btn-48 btn-blue-border'>
-            button
-          </button>
+          <Button onClick={onClick} type='blue-border' size={48}>
+            Button
+          </Button>
 
-          <button onClick={onClick} disabled className='btn-32 btn-blue-border'>
-            button
-          </button>
+          <Button onClick={onClick} type='blue-border' size={32}>
+            Button
+          </Button>
 
-          <button onClick={onClick} disabled className='btn-24 btn-blue-border'>
-            button
-          </button>
+          <Button onClick={onClick} type='blue-border' size={24}>
+            Button
+          </Button>
         </div>
 
-        <div className='mb-10 flex items-end'>
-          <button onClick={onClick} disabled className='btn-56 btn-grey-border'>
-            button
-          </button>
+        <div className='mb-10 flex w-700 items-end justify-between'>
+          <Button onClick={onClick} type='grey-border' size={56}>
+            Button
+          </Button>
 
-          <button onClick={onClick} disabled className='btn-48 btn-grey-border'>
-            button
-          </button>
+          <Button onClick={onClick} type='grey-border' size={48}>
+            Button
+          </Button>
 
-          <button onClick={onClick} disabled className='btn-32 btn-grey-border'>
-            button
-          </button>
+          <Button onClick={onClick} type='grey-border' size={32}>
+            Button
+          </Button>
 
-          <button onClick={onClick} disabled className='btn-24 btn-grey-border'>
-            button
-          </button>
+          <Button onClick={onClick} type='grey-border' size={24}>
+            Button
+          </Button>
+        </div>
+
+        <div className='mb-10 flex w-700 items-end justify-between'>
+          <Button onClick={onClick} type='text' size={56}>
+            Button
+          </Button>
+
+          <Button onClick={onClick} type='text' size={48}>
+            Button
+          </Button>
+
+          <Button onClick={onClick} type='text' size={32}>
+            Button
+          </Button>
+
+          <Button onClick={onClick} type='text' size={24}>
+            Button
+          </Button>
+        </div>
+
+        <div className=' mb-10 flex w-700 items-end justify-between'>
+          <Button onClick={onClick} type='arrow' size={56}>
+            자세히 보기
+          </Button>
+
+          <Button onClick={onClick} type='arrow' size={48}>
+            자세히 보기
+          </Button>
+
+          <Button onClick={onClick} type='arrow' size={32}>
+            자세히 보기
+          </Button>
+
+          <Button onClick={onClick} type='arrow' size={24}>
+            자세히 보기
+          </Button>
         </div>
       </div>
     </div>
