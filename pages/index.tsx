@@ -1,9 +1,11 @@
 import type { NextPage } from 'next';
-import { useEffect, useRef } from 'react';
+import { useRef, useState } from 'react';
 import Button from '@components/Button';
 import KaKaoLoginButton from '@components/Button/KaKaoLoginButton';
+import ToggleButton from '@components/ToggleButton';
 
 const Home: NextPage = () => {
+  const [toggle, setToggle] = useState(false);
   const ref = useRef<HTMLButtonElement>(null);
 
   const onClick = () => console.log('555');
@@ -13,6 +15,7 @@ const Home: NextPage = () => {
       <div className='flex flex-col'>
         <h1 className='text-50'>h1h1h11h</h1>
         <KaKaoLoginButton />
+        <ToggleButton value={toggle} onToggle={setToggle} />
 
         <div className='mb-10 flex w-700 items-end justify-between'>
           <Button onClick={onClick} type='blue' size={56}>
