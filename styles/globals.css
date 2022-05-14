@@ -6,6 +6,10 @@
     @apply text-l2 px-24 py-16 rounded-14 cursor-pointer;
 }
 
+.btn-full {
+    @apply w-full text-l2 px-24 py-16 rounded-14 cursor-pointer;
+}
+
 .btn-48 {
     @apply text-l2 px-18 py-12 rounded-12 cursor-pointer;
 }

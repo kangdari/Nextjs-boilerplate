@@ -1,0 +1,12 @@
+<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_2019_37486)">
+<path d="M0 16C0 7.16344 7.16344 0 16 0C24.8366 0 32 7.16344 32 16C32 24.8366 24.8366 32 16 32C7.16344 32 0 24.8366 0 16Z" fill="#CBCED0"/>
+<circle cx="16" cy="13.75" r="5.5" fill="#F8F8F8" stroke="#F8F8F8" stroke-width="1.5"/>
+<ellipse cx="16" cy="27.5" rx="8.75" ry="3.75" fill="#F8F8F8"/>
+</g>
+<defs>
+<clipPath id="clip0_2019_37486">
+<path d="M0 16C0 7.16344 7.16344 0 16 0C24.8366 0 32 7.16344 32 16C32 24.8366 24.8366 32 16 32C7.16344 32 0 24.8366 0 16Z" fill="white"/>
+</clipPath>
+</defs>
+</svg>

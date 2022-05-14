@@ -5,19 +5,34 @@ import KaKaoLoginButton from '@components/Button/KaKaoLoginButton';
 import ToggleButton from '@components/ToggleButton';
 import Input from '@components/Input';
 import TextArea from '@components/TextArea/TextArea';
+import useToggle from '@hooks/useToggle';
+import ExeModal from '@components/Modal/ExeModal';
 
 const Home: NextPage = () => {
   const [toggle, setToggle] = useState(false);
   const [value, setValue] = useState('');
+  const [visible, setVisible] = useToggle();
   // const ref = useRef<HTMLButtonElement>(null);
   // const ref = useRef<HTMLTextAreaElement>(null);
 
-  const onClick = () => console.log('555');
+  const onClick = () => setVisible();
 
   return (
     <div className={''}>
       <div className='flex flex-col'>
-        <h1 className='text-50'>h1h1h11h</h1>
+        <ExeModal
+          isOpen={visible}
+          onClose={setVisible}
+          closeIcon
+          buttonComponent={
+            <Button onClick={onClick} type='blue' size='full'>
+              Button
+            </Button>
+          }
+          headerButtonLabel={'buttonasdfasdf'}
+          headerButtonClick={() => console.log('header button click')}
+        />
+
         <Input name='test' value={value} onChange={setValue} placeholder='text' reset full />
         <Input value={value} onChange={setValue} placeholder='text' />
 

@@ -1,7 +1,7 @@
 import React, { useCallback } from 'react';
 import useToggle from '@hooks/useToggle';
 import { cls } from '@utils/index';
-import Close from '@icon/close.svg';
+import { SmClose } from '@constants/icons';
 
 interface InputProps {
   // todo type 추가
@@ -52,7 +52,7 @@ const Input = React.forwardRef<HTMLInputElement, InputProps>(
             type='button'
             onClick={handleReset}
             className='absolute  top-18 right-18 flex h-24 w-24 items-center justify-center rounded-12 bg-grey-2'>
-            <Close />
+            <SmClose />
           </button>
         )}
       </div>

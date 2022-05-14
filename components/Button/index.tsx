@@ -1,6 +1,6 @@
 import React from 'react';
 import { cls } from '../../utils';
-import RightArrow from 'public/icon/rightArrow.svg';
+import { RightArrow } from '@constants/icons';
 
 type ButtonType =
   | 'blue'
@@ -13,7 +13,7 @@ type ButtonType =
   | 'text'
   | 'arrow';
 
-type ButtonSize = 56 | 48 | 32 | 24;
+type ButtonSize = 56 | 48 | 32 | 24 | 'full';
 
 interface ButtonProps {
   type: ButtonType;
@@ -78,7 +78,7 @@ const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
           getTypeButton(type),
           getButtonSize(type, size),
           disabled ? getDisabled(type) : '',
-          'flex items-center',
+          'flex items-center justify-center',
           className,
         )}
         disabled={disabled}

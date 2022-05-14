@@ -14,6 +14,7 @@ module.exports = {
         xl: '1920px',
       },
       width: px0_4000,
+      height: px0_4000,
       borderRadius: px0_100,
       borderWidth: px0_10,
       lineHeight: px0_100,
