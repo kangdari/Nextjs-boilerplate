@@ -1,19 +1,28 @@
 import type { NextPage } from 'next';
-import { useRef, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import Button from '@components/Button';
 import KaKaoLoginButton from '@components/Button/KaKaoLoginButton';
 import ToggleButton from '@components/ToggleButton';
+import Input from '@components/Input';
+import TextArea from '@components/TextArea/TextArea';
 
 const Home: NextPage = () => {
   const [toggle, setToggle] = useState(false);
-  const ref = useRef<HTMLButtonElement>(null);
+  const [value, setValue] = useState('');
+  // const ref = useRef<HTMLButtonElement>(null);
+  // const ref = useRef<HTMLTextAreaElement>(null);
 
   const onClick = () => console.log('555');
 
   return (
-    <div>
+    <div className={''}>
       <div className='flex flex-col'>
         <h1 className='text-50'>h1h1h11h</h1>
+        <Input name='test' value={value} onChange={setValue} placeholder='text' reset full />
+        <Input value={value} onChange={setValue} placeholder='text' />
+
+        <TextArea value={value} onChange={setValue} placeholder='TextArea' />
+
         <KaKaoLoginButton />
         <ToggleButton value={toggle} onToggle={setToggle} />
 

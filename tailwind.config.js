@@ -7,6 +7,12 @@ module.exports = {
   content: ['./pages/**/*.{js.jsx,ts,tsx}', './components/**/*.{js.jsx,ts,tsx}'],
   theme: {
     extend: {
+      screens: {
+        sm: '375px',
+        md: '768px',
+        lg: '1060px',
+        xl: '1920px',
+      },
       width: px0_4000,
       borderRadius: px0_100,
       borderWidth: px0_10,
@@ -16,6 +22,7 @@ module.exports = {
       minWidth: px0_4000,
       minHeight: px0_4000,
       spacing: px0_200,
+      rounded: px0_100,
       fontSize: {
         d1: [
           '64px',
