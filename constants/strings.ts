@@ -13,8 +13,7 @@ const strings = {
   AddiInfo_Title_1: `여행가님이 활동하실 닉네임을\n알려주세요`,
   AddiInfo_Title_2: `당장 내일 떠날 수 있다고 하면\\n가장 떠나고 싶은 여행지가 있을까요?`,
   AddiInfo_Title_3: `가장 떠나고 싶은 여행지에서\n첫번째로 하고 싶은 것은 무엇일까요?`,
-
-  //
+  AddiInfo_Title_4: `회원가입 완료!\n여행에 대한 모든 이야기를 나누어 볼까요?`,
 
   Confirm: '확인',
   Cancel: '취소',

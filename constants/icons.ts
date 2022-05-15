@@ -34,7 +34,9 @@ import TopicOff from '@icon/Topic_off.svg';
 import TopicOn from '@icon/Topic_on.svg';
 import Plus from '@icon/plus.svg';
 import CheckOff from '@icon/checkOff.svg';
-import CheckON from '@icon/checkOn.svg';
+import CheckOn from '@icon/checkOn.svg';
+import RadioOff from '@icon/radioOff.svg';
+import RadioOn from '@icon/radioOn.svg';
 
 export {
   AvatarOff,
@@ -73,5 +75,7 @@ export {
   TopicOff,
   Plus,
   CheckOff,
-  CheckON,
+  CheckOn,
+  RadioOff,
+  RadioOn,
 };

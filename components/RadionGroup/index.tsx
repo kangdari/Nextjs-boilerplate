@@ -1,15 +1,14 @@
 import React from 'react';
 import { cls } from '@utils/index';
-import { CheckOn, CheckOff } from '@constants/icons';
-import indexOf from 'lodash/indexOf';
+import { RadioOff, RadioOn } from '@constants/icons';
 
-interface CheckBoxProps {
-  values: any;
-  setValues: any;
+interface RadioOptionProps {
+  value: any;
+  setRadio: any;
   options: any[];
 }
 
-function CheckBoxOption({ option, onChange, checked }: any) {
+function RadioOption({ option, onChange, checked }: any) {
   return (
     <label
       htmlFor={option?.label}
@@ -22,41 +21,34 @@ function CheckBoxOption({ option, onChange, checked }: any) {
         name={option?.label}
         value={option?.value} // todo 수정
         className='absolute left-[-9999px]'
-        type='checkbox'
+        type='radio'
         checked={checked}
         onChange={onChange}
       />
-      {checked ? <CheckOn className='mr-8 min-w-24' /> : <CheckOff className='mr-8 min-w-24' />}
+      {checked ? <RadioOn className='mr-8 min-w-24' /> : <RadioOff className='mr-8 min-w-24' />}
       {option?.label}
     </label>
   );
 }
 
-function CheckBox({ options, values, setValues }: CheckBoxProps) {
+function RadioGroup({ options, value, setRadio }: RadioOptionProps) {
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    const { value, name } = e.target;
-    const existingIndex = indexOf(values, value);
-
-    if (existingIndex === -1) {
-      setValues((prevState: any) => [...prevState, value]);
-    } else if (existingIndex !== -1) {
-      const filteredValues = values.filter((value: any) => value !== values[existingIndex]);
-      setValues(filteredValues);
-    }
+    const { name, value: selectValue } = e.target;
+    setRadio(selectValue);
   };
 
   return (
     <div className='space-y-16'>
       {options?.map(option => (
-        <CheckBoxOption
+        <RadioOption
           key={option.id}
           option={option}
           onChange={handleChange}
-          checked={indexOf(values, option.value) !== -1}
+          checked={value === option.value}
         />
       ))}
     </div>
   );
 }
 
-export default CheckBox;
+export default RadioGroup;

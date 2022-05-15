@@ -51,7 +51,7 @@ function SignUpModal({ isOpen, onClose, ...rest }: SignUpModalProps) {
   return (
     <Modal
       noPadding={!logged}
-      isOpen={true}
+      isOpen={isOpen}
       onClose={onClose}
       headerTitle={headerTitle}
       buttonComponent={

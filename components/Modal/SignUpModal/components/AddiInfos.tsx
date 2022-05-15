@@ -46,6 +46,7 @@ interface AddiInfosProps {}
 
 function AddiInfos({}: AddiInfosProps) {
   const [values, setValues] = useState<string[]>([]);
+  const [radio, setRadio] = useState('');
 
   return (
     <div>
@@ -63,6 +64,8 @@ function AddiInfos({}: AddiInfosProps) {
       <div className='space-y-16'>
         <CheckBox options={options} values={values} setValues={setValues} />
       </div>
+
+      {/*<h2 className='mb-24 whitespace-pre-wrap text-h2'>{strings.AddiInfo_Title_4}</h2>*/}
     </div>
   );
 }
