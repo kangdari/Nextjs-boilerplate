@@ -16,7 +16,7 @@ type ButtonType =
 type ButtonSize = 56 | 48 | 32 | 24 | 'full';
 
 interface ButtonProps {
-  type: ButtonType;
+  type?: ButtonType;
   size: ButtonSize;
   onClick: () => void | ((event: React.MouseEvent<HTMLButtonElement, MouseEvent>) => void);
   className?: string;
@@ -65,7 +65,7 @@ const getDisabled = (type: ButtonType) => {
 };
 
 const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
-  ({ type, size, onClick, className = '', disabled, children }, ref) => {
+  ({ type = 'blue', size, onClick, className = '', disabled, children }, ref) => {
     const handleOnClick = (e: React.MouseEvent<HTMLButtonElement>) => {
       onClick();
     };

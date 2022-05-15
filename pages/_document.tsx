@@ -18,7 +18,7 @@ class CustomDocument extends Document {
             type='text/css'
           />
         </Head>
-        <body className='font-spoqa'>
+        <body className='font-spoqa text-grey-11'>
           <Main />
           <NextScript />
         </body>

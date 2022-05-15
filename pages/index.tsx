@@ -9,11 +9,15 @@ import useToggle from '@hooks/useToggle';
 import ExeModal from '@components/Modal/ExeModal';
 import useModal from '@hooks/useGlobalModal';
 import useGlobalModal from '@hooks/useGlobalModal';
+import Layout from '@components/Layout';
+import SignUpModal from '@components/Modal/SignUpModal';
+import strings from '@constants/strings';
 
 const Home: NextPage = () => {
   const [toggle, setToggle] = useState(false);
   const [value, setValue] = useState('');
   const [visible, setVisible] = useToggle();
+  const [singUp, setSignUp] = useToggle();
   // const ref = useRef<HTMLButtonElement>(null);
   // const ref = useRef<HTMLTextAreaElement>(null);
   const { showModal, hideModal } = useGlobalModal();
@@ -36,7 +40,7 @@ const Home: NextPage = () => {
   };
 
   return (
-    <div>
+    <Layout title='Home'>
       <div className='flex flex-col'>
         <ExeModal
           isOpen={visible}
@@ -51,12 +55,13 @@ const Home: NextPage = () => {
           headerButtonClick={() => console.log('header button click')}
         />
 
+        <SignUpModal isOpen={singUp} onClose={setSignUp} closeIcon size='lg' />
+
         <Input name='test' value={value} onChange={setValue} placeholder='text' reset full />
         <Input value={value} onChange={setValue} placeholder='text' />
 
         <TextArea value={value} onChange={setValue} placeholder='TextArea' />
 
-        <KaKaoLoginButton />
         <ToggleButton value={toggle} onToggle={setToggle} />
 
         <div className='mb-10 flex w-700 items-end justify-between'>
@@ -64,8 +69,8 @@ const Home: NextPage = () => {
             GlobalModal
           </Button>
 
-          <Button onClick={onClick} type='blue' size={48}>
-            Button
+          <Button onClick={setSignUp} type='blue' size={48}>
+            SignUp modal
           </Button>
 
           <Button onClick={onClick} type='blue' size={32}>
@@ -221,7 +226,7 @@ const Home: NextPage = () => {
           </Button>
         </div>
       </div>
-    </div>
+    </Layout>
   );
 };
 

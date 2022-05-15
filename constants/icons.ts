@@ -33,6 +33,8 @@ import HomeOff from '@icon/Home_off.svg';
 import TopicOff from '@icon/Topic_off.svg';
 import TopicOn from '@icon/Topic_on.svg';
 import Plus from '@icon/plus.svg';
+import CheckOff from '@icon/checkOff.svg';
+import CheckON from '@icon/checkOn.svg';
 
 export {
   AvatarOff,
@@ -70,4 +72,6 @@ export {
   TopicOn,
   TopicOff,
   Plus,
+  CheckOff,
+  CheckON,
 };

@@ -13,10 +13,11 @@ interface InputProps {
   name?: string;
   reset?: boolean;
   className?: string;
+  numberLabel?: number | boolean;
 }
 
 const Input = React.forwardRef<HTMLInputElement, InputProps>(
-  ({ full, placeholder, onChange, value, name, reset, className = '' }, ref) => {
+  ({ full, placeholder, onChange, value, name, reset, numberLabel, className = '' }, ref) => {
     const [focus, setFocus] = useToggle();
 
     const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -33,6 +34,7 @@ const Input = React.forwardRef<HTMLInputElement, InputProps>(
           focus ? 'border-blue-7' : 'border-grey-3',
           full ? 'w-full' : 'w-320',
         )}>
+        {numberLabel && <span className='absolute left-18 top-15 text-l1'>{numberLabel}</span>}
         <input
           ref={ref}
           type='text'
@@ -43,6 +45,7 @@ const Input = React.forwardRef<HTMLInputElement, InputProps>(
           className={cls(
             'w-full px-18 py-15 text-l1 caret-blue-7 outline-none',
             reset ? 'pr-48' : '',
+            numberLabel ? 'pl-40' : '',
           )}
           onFocus={setFocus}
           onBlur={setFocus}
