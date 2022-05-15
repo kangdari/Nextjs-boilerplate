@@ -7,6 +7,8 @@ import Input from '@components/Input';
 import TextArea from '@components/TextArea/TextArea';
 import useToggle from '@hooks/useToggle';
 import ExeModal from '@components/Modal/ExeModal';
+import useModal from '@hooks/useGlobalModal';
+import useGlobalModal from '@hooks/useGlobalModal';
 
 const Home: NextPage = () => {
   const [toggle, setToggle] = useState(false);
@@ -14,11 +16,27 @@ const Home: NextPage = () => {
   const [visible, setVisible] = useToggle();
   // const ref = useRef<HTMLButtonElement>(null);
   // const ref = useRef<HTMLTextAreaElement>(null);
+  const { showModal, hideModal } = useGlobalModal();
 
   const onClick = () => setVisible();
 
+  const handleClickConfirmModal = () => {
+    showModal({
+      modalType: 'ConfirmModal',
+      modalProps: {
+        message: 'Confirm Modal',
+        confirmText: 'Yes',
+        cancelText: 'No',
+        handleConfirm: () => {
+          console.log('Yes!');
+        },
+        handleClose: () => hideModal(),
+      },
+    });
+  };
+
   return (
-    <div className={''}>
+    <div>
       <div className='flex flex-col'>
         <ExeModal
           isOpen={visible}
@@ -42,8 +60,8 @@ const Home: NextPage = () => {
         <ToggleButton value={toggle} onToggle={setToggle} />
 
         <div className='mb-10 flex w-700 items-end justify-between'>
-          <Button onClick={onClick} type='blue' size={56}>
-            Button
+          <Button onClick={handleClickConfirmModal} type='blue' size={56}>
+            GlobalModal
           </Button>
 
           <Button onClick={onClick} type='blue' size={48}>

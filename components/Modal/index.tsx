@@ -17,6 +17,12 @@ interface ModalProps {
   children?: React.ReactNode;
 }
 
+const customStyles = {
+  overlay: {
+    background: 'transparent',
+  },
+};
+
 const Modal = ({
   isOpen,
   onClose,
@@ -29,12 +35,6 @@ const Modal = ({
   children,
 }: ModalProps) => {
   const { isTablet } = useWindowDimensions() || {};
-
-  const customStyles = {
-    overlay: {
-      background: 'transparent',
-    },
-  };
 
   const handleHeaderButtonClick = useCallback(() => {
     if (headerButtonClick) {
