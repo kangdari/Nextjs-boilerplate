@@ -1,6 +1,6 @@
 import React from 'react';
 import { cls } from '../../utils';
-import { RightArrow } from '@constants/icons';
+import { SmRight } from '@constants/icons';
 
 type ButtonType =
   | 'blue'
@@ -35,7 +35,7 @@ const getTypeButton = (type: ButtonType) => {
 const getButtonSize = (type: ButtonType, size: ButtonSize) => {
   if (!size) return '';
 
-  if (type === 'text' || type === 'arrow') return '';
+  if (type === 'text' || type === 'arrow') return `btn-${size}-text`;
 
   return `btn-${size}`;
 };
@@ -83,7 +83,7 @@ const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
         )}
         disabled={disabled}
         onClick={handleOnClick}>
-        {children} {type === 'arrow' && <RightArrow className='ml-5' width={16} height={16} />}
+        {children} {type === 'arrow' && <SmRight className='' />}
       </button>
     );
   },

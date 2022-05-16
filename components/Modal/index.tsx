@@ -89,7 +89,9 @@ const Modal = ({
           </Button>
         )}
       </div>
-      <div className={cls('flex flex-1 flex-col', noPadding ? ' p-0' : ' p-24')}>{children}</div>
+      <div className={cls('relative flex flex-1 flex-col', noPadding ? ' p-0' : ' p-24')}>
+        {children}
+      </div>
       {buttonComponent && <div className='p-24 pt-0'>{buttonComponent}</div>}
     </ReactModal>
   );
