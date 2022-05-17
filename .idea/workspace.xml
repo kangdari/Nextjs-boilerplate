@@ -5,19 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1a2471bd-a46b-4c3f-8a07-d9a0faf83952" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.env" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libs/server/withHandler.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libs/server/withSession.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/api/files.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.env.development" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.env.production" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/Modal/ReportModal/index.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/Modal/TopicSuggestionModal/index.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/UserRow/index.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Input/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Input/index.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/Modal/WritePostModal/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Modal/WritePostModal/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/TextArea/TextArea.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/TextArea/TextArea.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/next.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/next.config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Modal/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Modal/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/constants/strings.ts" beforeDir="false" afterPath="$PROJECT_DIR$/constants/strings.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -46,8 +40,8 @@
               <option name="branches">
                 <list>
                   <RecentBranch>
-                    <option name="branchName" value="feature/writePost_image" />
-                    <option name="lastUsedInstant" value="1652770794" />
+                    <option name="branchName" value="develop" />
+                    <option name="lastUsedInstant" value="1652780509" />
                   </RecentBranch>
                   <RecentBranch>
                     <option name="branchName" value="main" />
@@ -138,7 +132,7 @@
       <workItem from="1652696481244" duration="452000" />
       <workItem from="1652751228230" duration="17605000" />
       <workItem from="1652779935380" duration="40000" />
-      <workItem from="1652780052676" duration="393000" />
+      <workItem from="1652780052676" duration="2256000" />
     </task>
     <servers />
   </component>

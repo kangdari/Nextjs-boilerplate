@@ -14,6 +14,7 @@ import CheckToggleButton from '@components/CheckToggleButton';
 import useToggle from '@hooks/useToggle';
 import Vote from '@components/Vote';
 import Input from '@components/Input';
+import UserRow from '@components/UserRow';
 
 interface WritePostModalProps {
   size?: 'sm' | 'lg';
@@ -203,18 +204,7 @@ function WritePostModal({ isOpen, onClose, rest }: WritePostModalProps) {
       return (
         <form className='relative flex-1 pb-52'>
           <div className='mb-16 space-y-14'>
-            <div className='flex items-center'>
-              <AvatarOn className='mr-12' />
-              <p className='flex-1 text-h5'>User NickName</p>
-              <Button
-                className='ml-auto'
-                type='grey'
-                size={32}
-                onClick={() => console.log('글쓰기 안내')}>
-                {strings.WriteGuide}
-              </Button>
-            </div>
-
+            <UserRow buttonLabel={strings.WriteGuide} buttonClick={() => console.log('hi')} />
             <div className='flex items-center'>
               <AvatarOff className='mr-12' />
               <input
@@ -403,8 +393,7 @@ function WritePostModal({ isOpen, onClose, rest }: WritePostModalProps) {
 
   return (
     <Modal
-      isOpen={true}
-      // isOpen={isOpen}
+      isOpen={isOpen}
       onClose={onClose}
       headerTitle={!!type ? type : strings.Write}
       closeIcon={!type}

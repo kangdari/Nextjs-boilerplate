@@ -5,7 +5,7 @@ import { SmallLeftArrow, LeftArrow, Close } from '@constants/icons';
 import { cls } from '@utils/index';
 import useWindowDimensions from '@hooks/useWindowDementions';
 
-interface ModalProps {
+export interface ModalProps {
   size?: 'sm' | 'lg';
   isOpen: boolean;
   onClose: () => void;

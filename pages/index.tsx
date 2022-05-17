@@ -13,12 +13,17 @@ import Layout from '@components/Layout';
 import SignUpModal from '@components/Modal/SignUpModal';
 import strings from '@constants/strings';
 import WritePostModal from '@components/Modal/WritePostModal';
+import ReportModal from '@components/Modal/ReportModal';
+import TopicSuggestionModal from '@components/Modal/TopicSuggestionModal';
 
 const Home: NextPage = () => {
   const [toggle, setToggle] = useState(false);
   const [value, setValue] = useState('');
   const [visible, setVisible] = useToggle();
   const [singUp, setSignUp] = useToggle();
+  const [writePost, setWritePost] = useToggle();
+  const [report, setReport] = useToggle();
+  const [topic, setTopic] = useToggle();
   // const ref = useRef<HTMLButtonElement>(null);
   // const ref = useRef<HTMLTextAreaElement>(null);
   const { showModal, hideModal } = useGlobalModal();
@@ -56,7 +61,11 @@ const Home: NextPage = () => {
           headerButtonClick={() => console.log('header button click')}
         />
 
-        <WritePostModal isOpen={visible} onClose={setVisible} />
+        <WritePostModal isOpen={writePost} onClose={setWritePost} />
+
+        <ReportModal isOpen={report} onClose={setReport} />
+
+        <TopicSuggestionModal isOpen={topic} onClose={setTopic} />
 
         <SignUpModal isOpen={singUp} onClose={setSignUp} closeIcon size='lg' />
 
@@ -71,18 +80,18 @@ const Home: NextPage = () => {
             SignUp modal
           </Button>
 
-          <Button onClick={onClick} type='blue' size={32}>
-            Button
+          <Button onClick={setWritePost} type='blue' size={32}>
+            WritePostModal
           </Button>
 
-          <Button onClick={onClick} type='blue' size={24}>
-            Button
+          <Button onClick={setReport} type='blue' size={24}>
+            ReportModal
           </Button>
         </div>
 
         <div className='mb-10 flex w-700 items-end justify-between'>
-          <Button onClick={onClick} type='black' size={56}>
-            Button
+          <Button onClick={setTopic} type='black' size={56}>
+            TopicModal
           </Button>
 
           <Button onClick={onClick} type='black' size={48}>
