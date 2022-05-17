@@ -24,7 +24,8 @@
     "react-query": "^3.38.1",
     "react-redux": "^8.0.1",
     "react-textarea-autosize": "^8.3.3",
-    "redux-logger": "^3.0.6"
+    "redux-logger": "^3.0.6",
+    "tailwind-scrollbar-hide": "^1.1.7"
   },
   "devDependencies": {
     "@svgr/webpack": "^6.2.1",

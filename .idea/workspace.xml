@@ -5,17 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1a2471bd-a46b-4c3f-8a07-d9a0faf83952" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/components/Modal/EditProfileModal/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/icon/camera.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/image/profileBg.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Button/KaKaoLoginButton.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Button/KaKaoLoginButton.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/TextArea/TextArea.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/TextArea/TextArea.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/UserFormInput/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/UserFormInput/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/constants/icons.ts" beforeDir="false" afterPath="$PROJECT_DIR$/constants/icons.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/constants/strings.ts" beforeDir="false" afterPath="$PROJECT_DIR$/constants/strings.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/next.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/next.config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Modal/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Modal/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tailwind.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/tailwind.config.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -135,7 +129,7 @@
       <workItem from="1652696481244" duration="452000" />
       <workItem from="1652751228230" duration="17605000" />
       <workItem from="1652779935380" duration="40000" />
-      <workItem from="1652780052676" duration="10687000" />
+      <workItem from="1652780052676" duration="11250000" />
     </task>
     <servers />
   </component>

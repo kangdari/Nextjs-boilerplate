@@ -65,6 +65,7 @@ const Modal = ({
           : 'absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]',
         isTablet ? 'w-full' : size === 'lg' ? 'w-560' : 'w-420',
         size === 'lg' ? 'min-h-640' : 'min-h-320',
+        'max-h-800',
       )}
       isOpen={isOpen}
       onRequestClose={onClose}
@@ -95,7 +96,11 @@ const Modal = ({
           </Button>
         )}
       </div>
-      <div className={cls('relative flex flex-1 flex-col', noPadding ? ' p-0' : ' p-24')}>
+      <div
+        className={cls(
+          'relative flex flex-1 flex-col overflow-y-scroll scrollbar-hide',
+          noPadding ? ' p-0' : ' p-24',
+        )}>
         {children}
       </div>
       {buttonComponent && <div className='p-24 pt-0'>{buttonComponent}</div>}

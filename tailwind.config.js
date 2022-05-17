@@ -164,5 +164,5 @@ module.exports = {
       spoqa: 'Spoqa Han Sans Neo',
     },
   },
-  plugins: [],
+  plugins: [require('tailwind-scrollbar-hide'), require('@tailwindcss/forms')],
 };
