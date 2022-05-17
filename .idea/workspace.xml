@@ -5,19 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1a2471bd-a46b-4c3f-8a07-d9a0faf83952" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/components/CheckToggleButton/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/Modal/WritePostModal/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/Tag/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/Vote/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/image/writePost.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/server/withHandler.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/server/withSession.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/api/files.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.env.development" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.env.production" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Button/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Button/index.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/Input/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Input/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Modal/SignUpModal/components/AddiInfos.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Modal/SignUpModal/components/AddiInfos.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Modal/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Modal/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Modal/WritePostModal/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Modal/WritePostModal/index.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/TextArea/TextArea.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/TextArea/TextArea.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/constants/icons.ts" beforeDir="false" afterPath="$PROJECT_DIR$/constants/icons.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/constants/strings.ts" beforeDir="false" afterPath="$PROJECT_DIR$/constants/strings.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/next.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/next.config.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.tsx" afterDir="false" />
@@ -39,6 +37,31 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitToolBoxStore">
+    <option name="recentBranches">
+      <RecentBranches>
+        <option name="branchesForRepo">
+          <list>
+            <RecentBranchesForRepo>
+              <option name="branches">
+                <list>
+                  <RecentBranch>
+                    <option name="branchName" value="feature/writePost_image" />
+                    <option name="lastUsedInstant" value="1652770794" />
+                  </RecentBranch>
+                  <RecentBranch>
+                    <option name="branchName" value="main" />
+                    <option name="lastUsedInstant" value="1652770793" />
+                  </RecentBranch>
+                </list>
+              </option>
+              <option name="repositoryRootUrl" value="file://$PROJECT_DIR$" />
+            </RecentBranchesForRepo>
+          </list>
+        </option>
+      </RecentBranches>
+    </option>
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -52,7 +75,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/components" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
@@ -71,8 +94,8 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/components" />
       <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/components" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/public/image" />
@@ -113,7 +136,9 @@
       <workItem from="1652655767757" duration="514000" />
       <workItem from="1652668342774" duration="14592000" />
       <workItem from="1652696481244" duration="452000" />
-      <workItem from="1652751228230" duration="3465000" />
+      <workItem from="1652751228230" duration="17605000" />
+      <workItem from="1652779935380" duration="40000" />
+      <workItem from="1652780052676" duration="393000" />
     </task>
     <servers />
   </component>

@@ -60,9 +60,6 @@ const Home: NextPage = () => {
 
         <SignUpModal isOpen={singUp} onClose={setSignUp} closeIcon size='lg' />
 
-        <Input name='test' value={value} onChange={setValue} placeholder='text' reset full />
-        <Input value={value} onChange={setValue} placeholder='text' />
-
         <ToggleButton value={toggle} onToggle={setToggle} />
 
         <div className='mb-10 flex w-700 items-end justify-between'>
