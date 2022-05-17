@@ -15,6 +15,27 @@ const strings = {
   AddiInfo_Title_3: `가장 떠나고 싶은 여행지에서\n첫번째로 하고 싶은 것은 무엇일까요?`,
   AddiInfo_Title_4: `회원가입 완료!\n여행에 대한 모든 이야기를 나누어 볼까요?`,
 
+  // 글쓰기 모달
+  Write: '글쓰기',
+  TripTalk: '여행톡 작성',
+  Qna: '질문과 답변 작성',
+  Precautions:
+    '여행과 관련한 이야기를 해주세요. \n' +
+    '혐오, 음란물 등 부적절한 내용을 남기지 말아주세요.\n' +
+    '신고를 당하면 커뮤니티 이용이 제한될 수 있습니다.',
+  WriteComplete: '작성 완료',
+  WriteGuide: '글쓰기 안내',
+
+  AddTag: '태그 추가',
+  AddLocation: '지역을 작성해 주세요',
+  AddPhotoAndVideo: '사진/동영상 추가',
+  AddPhoto: '사진 추가',
+  TripTalkPlaceHolder: '여행에 대한 자유로운 이야기를 작성해 보세요',
+  QnaPlaceHolder: '제목을 입력해 주세요',
+  AddVote: '투표 추가',
+  VotePlaceHolder: '선택지 내용을 입력해 주세요',
+  AddVoteItem: '선택 항목 추가',
+
   Confirm: '확인',
   Cancel: '취소',
 };

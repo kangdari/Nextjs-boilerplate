@@ -22,6 +22,8 @@ interface ButtonProps {
   className?: string;
   disabled?: boolean;
   children?: React.ReactNode;
+
+  [key: string]: any;
 }
 
 const getTypeButton = (type: ButtonType) => {
@@ -65,7 +67,7 @@ const getDisabled = (type: ButtonType) => {
 };
 
 const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
-  ({ type = 'blue', size, onClick, className = '', disabled, children }, ref) => {
+  ({ type = 'blue', size, onClick, className = '', disabled, children, ...rest }, ref) => {
     const handleOnClick = (e: React.MouseEvent<HTMLButtonElement>) => {
       onClick();
     };
@@ -75,14 +77,15 @@ const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
         type='button'
         ref={ref}
         className={cls(
+          className,
           getTypeButton(type),
           getButtonSize(type, size),
           disabled ? getDisabled(type) : '',
           'flex items-center justify-center',
-          className,
         )}
         disabled={disabled}
-        onClick={handleOnClick}>
+        onClick={handleOnClick}
+        {...rest}>
         {children} {type === 'arrow' && <SmRight className='' />}
       </button>
     );

@@ -12,6 +12,7 @@ import useGlobalModal from '@hooks/useGlobalModal';
 import Layout from '@components/Layout';
 import SignUpModal from '@components/Modal/SignUpModal';
 import strings from '@constants/strings';
+import WritePostModal from '@components/Modal/WritePostModal';
 
 const Home: NextPage = () => {
   const [toggle, setToggle] = useState(false);
@@ -55,12 +56,12 @@ const Home: NextPage = () => {
           headerButtonClick={() => console.log('header button click')}
         />
 
+        <WritePostModal isOpen={visible} onClose={setVisible} />
+
         <SignUpModal isOpen={singUp} onClose={setSignUp} closeIcon size='lg' />
 
         <Input name='test' value={value} onChange={setValue} placeholder='text' reset full />
         <Input value={value} onChange={setValue} placeholder='text' />
-
-        <TextArea value={value} onChange={setValue} placeholder='TextArea' />
 
         <ToggleButton value={toggle} onToggle={setToggle} />
 

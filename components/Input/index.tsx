@@ -8,7 +8,7 @@ interface InputProps {
   // type: InputType;
   full?: boolean;
   placeholder?: string;
-  onChange: (value: string) => void;
+  onChange: (value: string, name?: string) => void;
   value: string;
   name?: string;
   reset?: boolean;
@@ -20,9 +20,10 @@ const Input = React.forwardRef<HTMLInputElement, InputProps>(
   ({ full, placeholder, onChange, value, name, reset, numberLabel, className = '' }, ref) => {
     const [focus, setFocus] = useToggle();
 
+    // e를 넘길까?
     const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-      const { value } = e.target;
-      onChange(value);
+      const { value, name } = e.target;
+      onChange(value, name);
     };
 
     const handleReset = useCallback(() => onChange(''), []);

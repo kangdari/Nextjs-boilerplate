@@ -37,6 +37,8 @@ import CheckOff from '@icon/checkOff.svg';
 import CheckOn from '@icon/checkOn.svg';
 import RadioOff from '@icon/radioOff.svg';
 import RadioOn from '@icon/radioOn.svg';
+import Add from '@icon/add_lg.svg';
+import SmAdd from '@icon/add_sm.svg';
 
 export {
   AvatarOff,
@@ -78,4 +80,6 @@ export {
   CheckOn,
   RadioOff,
   RadioOn,
+  Add,
+  SmAdd,
 };

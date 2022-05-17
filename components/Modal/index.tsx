@@ -11,6 +11,7 @@ interface ModalProps {
   onClose: () => void;
   closeIcon?: boolean;
   backIcon?: boolean;
+  onClickBackIcon?: () => void;
   headerButtonClick?: () => void;
   headerButtonLabel?: string;
   buttonComponent?: React.ReactNode;
@@ -30,6 +31,7 @@ const Modal = ({
   onClose,
   closeIcon,
   backIcon,
+  onClickBackIcon,
   size = 'lg',
   headerButtonLabel,
   headerButtonClick,
@@ -57,7 +59,7 @@ const Modal = ({
   return (
     <ReactModal
       className={cls(
-        `flex flex-col rounded-20 border-none bg-white shadow-[0_4px_32px_0px_rgba(0,0,0,0.3)]`,
+        `flex flex-col overflow-hidden rounded-20 border-none bg-white shadow-[0_4px_32px_0px_rgba(0,0,0,0.3)]`,
         isTablet
           ? 'absolute top-0 left-0 right-0 bottom-0 translate-x-0 translate-y-0 rounded-0'
           : 'absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]',
@@ -70,10 +72,13 @@ const Modal = ({
       ariaHideApp={false}>
       <div className='relative flex justify-center border-b-1 border-grey-3 px-16 py-15 text-l2 text-grey-11'>
         {size === 'lg' && backIcon && (
-          <SmallLeftArrow className='absolute left-16 top-20 cursor-pointer' onClick={onClose} />
+          <SmallLeftArrow
+            className='absolute left-16 top-20 cursor-pointer'
+            onClick={onClickBackIcon}
+          />
         )}
         {size === 'sm' && backIcon && (
-          <LeftArrow className='absolute left-16 top-20 cursor-pointer' onClick={onClose} />
+          <LeftArrow className='absolute left-16 top-20 cursor-pointer' onClick={onClickBackIcon} />
         )}
         {closeIcon && (
           <Close className='absolute left-16 top-16 cursor-pointer' onClick={onClose} />
@@ -82,6 +87,7 @@ const Modal = ({
         {!!headerButtonLabel && (
           <Button
             className='absolute right-16 top-11'
+            style={{ borderRadius: '64px' }}
             type='blue'
             size={32}
             onClick={handleHeaderButtonClick}>

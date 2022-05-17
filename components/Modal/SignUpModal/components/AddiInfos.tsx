@@ -48,8 +48,7 @@ interface AddiInfosProps {}
 
 function AddiInfos({}: AddiInfosProps) {
   const [values, setValues] = useState<string[]>([]);
-  const [radio, setRadio] = useState('');
-  const [width, setWidth] = useState(20);
+  const [width, setWidth] = useState(20); // todo 진행률
 
   return (
     <>
@@ -58,7 +57,7 @@ function AddiInfos({}: AddiInfosProps) {
         style={{
           width: `${width}%`,
         }}
-        className={cls(`duration-500`, `absolute top-0 left-0 h-2 bg-blue-7`)}
+        className={cls(`duration-500`, `h2 absolute top-0 left-0 bg-blue-7`)}
       />
 
       {/*<h2 className='mb-24 whitespace-pre-wrap text-h2'>{strings.AddiInfo_Title_1}</h2>*/}

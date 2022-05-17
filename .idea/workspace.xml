@@ -5,12 +5,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1a2471bd-a46b-4c3f-8a07-d9a0faf83952" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/components/CheckToggleButton/index.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/Modal/WritePostModal/index.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/Tag/index.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/Vote/index.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/image/writePost.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/Button/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Button/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Input/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Input/index.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/Modal/SignUpModal/components/AddiInfos.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Modal/SignUpModal/components/AddiInfos.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/Modal/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Modal/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/styles/globals.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles/globals.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tailwind.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/tailwind.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/TextArea/TextArea.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/TextArea/TextArea.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/constants/icons.ts" beforeDir="false" afterPath="$PROJECT_DIR$/constants/icons.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/constants/strings.ts" beforeDir="false" afterPath="$PROJECT_DIR$/constants/strings.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,6 +75,7 @@
       <recent name="$PROJECT_DIR$" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/public/image" />
       <recent name="$PROJECT_DIR$/components" />
       <recent name="$PROJECT_DIR$/public/icon" />
       <recent name="$PROJECT_DIR$/assets/fonts" />
@@ -100,7 +111,9 @@
       <workItem from="1652570998283" duration="479000" />
       <workItem from="1652590416101" duration="13072000" />
       <workItem from="1652655767757" duration="514000" />
-      <workItem from="1652668342774" duration="1918000" />
+      <workItem from="1652668342774" duration="14592000" />
+      <workItem from="1652696481244" duration="452000" />
+      <workItem from="1652751228230" duration="3465000" />
     </task>
     <servers />
   </component>
