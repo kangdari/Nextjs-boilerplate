@@ -2,46 +2,33 @@ import React from 'react';
 import { cls } from '@utils/index';
 import TextareaAutosize from 'react-textarea-autosize';
 import { UseFormRegisterReturn } from 'react-hook-form';
+import useToggle from '@hooks/useToggle';
 
 interface TextAreaProps {
   placeholder?: string;
-  // onChange?: (value: string) => void;
-  // value: string;
-  // name?: string;
   className?: string;
   register?: UseFormRegisterReturn;
+  border: boolean;
 }
 
 const TextArea = React.forwardRef<HTMLTextAreaElement, TextAreaProps>(
-  (
-    {
-      placeholder,
-      // onChange,
-      // value,
-      // name,
-      className = '',
-      register,
-      ...rest
-    },
-    ref,
-  ) => {
-    // const handleChange = (e: React.ChangeEvent<HTMLTextAreaElement>) => {
-    //   const { value } = e.target;
-    //   onChange(value);
-    // };
+  ({ placeholder, className = '', register, border, ...rest }, ref) => {
+    const [focus, setFocus] = useToggle();
 
     return (
       <TextareaAutosize
-        ref={ref}
-        // value={value}
-        // name={name}
-        placeholder={placeholder}
-        className={cls(className, 'w-full resize-none  text-l1 caret-blue-7 outline-none')}
-        // onChange={handleChange}
         {...register}
         {...rest}
-        // onFocus={setFocus}
-        // onBlur={setFocus}
+        ref={ref}
+        placeholder={placeholder}
+        className={cls(
+          className,
+          'w-full resize-none  text-l1 caret-blue-7 outline-none',
+          border ? 'min-h-200 rounded-12 border-[1.5px] p-18 text-h5' : '',
+          border && focus ? 'border-blue-7' : 'border-grey-3',
+        )}
+        onFocus={setFocus}
+        onBlur={setFocus}
       />
     );
   },

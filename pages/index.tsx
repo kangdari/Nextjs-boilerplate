@@ -16,6 +16,7 @@ import WritePostModal from '@components/Modal/WritePostModal';
 import ReportModal from '@components/Modal/ReportModal';
 import TopicSuggestionModal from '@components/Modal/TopicSuggestionModal';
 import AddGroupModal from '@components/Modal/AddGroupModal';
+import EditProfileModal from '@components/Modal/EditProfileModal';
 
 const Home: NextPage = () => {
   const [toggle, setToggle] = useState(false);
@@ -26,6 +27,7 @@ const Home: NextPage = () => {
   const [report, setReport] = useToggle();
   const [topic, setTopic] = useToggle();
   const [group, setGroup] = useToggle();
+  const [profile, setProfile] = useToggle();
   // const ref = useRef<HTMLButtonElement>(null);
   // const ref = useRef<HTMLTextAreaElement>(null);
   const { showModal, hideModal } = useGlobalModal();
@@ -75,6 +77,8 @@ const Home: NextPage = () => {
 
         {toggle && <ToggleButton value={toggle} onToggle={setToggle} />}
 
+        {profile && <EditProfileModal isOpen={profile} onClose={setProfile} />}
+
         <div className='mb-10 flex w-700 items-end justify-between'>
           <Button onClick={handleClickConfirmModal} type='blue' size={56}>
             GlobalModal
@@ -102,8 +106,8 @@ const Home: NextPage = () => {
             AddGroupModal
           </Button>
 
-          <Button onClick={onClick} type='black' size={32}>
-            Button
+          <Button onClick={setProfile} type='black' size={32}>
+            ProfileModal
           </Button>
 
           <Button onClick={onClick} type='black' size={24}>

@@ -23,7 +23,6 @@ const strings = {
     '여행과 관련한 이야기를 해주세요. \n' +
     '혐오, 음란물 등 부적절한 내용을 남기지 말아주세요.\n' +
     '신고를 당하면 커뮤니티 이용이 제한될 수 있습니다.',
-  WriteComplete: '작성 완료',
   WriteGuide: '글쓰기 안내',
 
   AddTag: '태그 추가',
@@ -46,11 +45,16 @@ const strings = {
   AddGroup: '그룹 추가',
   AddGroupPlaceholder: '그룹 이름',
 
+  EditProfile: '내 정보 수정',
+  placeholderDestination: '순위 여행지를 입력해 주세요',
+
   // Validation Error
   ErrorRequiredTitle: '제목을 입력해 주세요',
   ErrorRequiredContents: '내용을 입력해 주세요',
   ErrorRequiredGroupName: '그룹 이름을 입력해 주세요',
 
+  WriteComplete: '작성 완료',
+  EditComplete: '수정 완료',
   Confirm: '확인',
   Submit: '제출하기',
   Cancel: '취소',

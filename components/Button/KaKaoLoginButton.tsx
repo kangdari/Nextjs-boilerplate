@@ -1,5 +1,4 @@
 import React from 'react';
-import Kakao from '@icon/kakao.svg';
 import strings from '@constants/strings';
 import { cls } from '@utils/index';
 

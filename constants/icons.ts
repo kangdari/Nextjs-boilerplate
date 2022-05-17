@@ -26,8 +26,8 @@ import Search from '@icon/search_lg.svg';
 import Star from '@icon/star_lg.svg';
 import SmStar from '@icon/star_sm.svg';
 import Share from '@icon/share.svg';
-import AvatarOn from '@icon/avatar_off.svg';
-import AvatarOff from '@icon/avatar_On.svg';
+import AvatarOff from '@icon/avatar_off.svg';
+import AvatarOn from '@icon/avatar_on.svg';
 import HomeOn from '@icon/Home_on.svg';
 import HomeOff from '@icon/Home_off.svg';
 import TopicOff from '@icon/Topic_off.svg';
@@ -39,6 +39,7 @@ import RadioOff from '@icon/radioOff.svg';
 import RadioOn from '@icon/radioOn.svg';
 import Add from '@icon/add_lg.svg';
 import SmAdd from '@icon/add_sm.svg';
+import Camera from '@icon/camera.svg';
 
 export {
   AvatarOff,
@@ -82,4 +83,5 @@ export {
   RadioOn,
   Add,
   SmAdd,
+  Camera,
 };

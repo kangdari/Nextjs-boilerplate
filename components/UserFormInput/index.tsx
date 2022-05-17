@@ -8,13 +8,14 @@ interface UserFormInputProps {
   full?: boolean;
   placeholder?: string;
   className?: string;
-  register?: UseFormRegisterReturn;
+  register: UseFormRegisterReturn;
+  numberLabel?: number | boolean;
 
   [key: string]: any;
 }
 
 const UserFormInput = React.forwardRef<HTMLInputElement, UserFormInputProps>(
-  ({ full, placeholder, className = '', register, ...rest }, ref) => {
+  ({ full = true, placeholder, className = '', register, numberLabel, ...rest }, ref) => {
     const [focus, setFocus] = useToggle();
 
     return (
@@ -24,20 +25,24 @@ const UserFormInput = React.forwardRef<HTMLInputElement, UserFormInputProps>(
           focus ? 'border-blue-7' : 'border-grey-3',
           full ? 'w-full' : 'w-320',
         )}>
+        {numberLabel && <span className='absolute left-18 top-15 text-l1'>{numberLabel}</span>}
         <input
+          {...register}
+          {...rest}
           ref={ref}
           type='text'
           placeholder={placeholder}
-          className={cls('w-full px-18 py-15 text-l1 caret-blue-7 outline-none')}
-          onFocus={setFocus}
-          onBlur={setFocus}
+          className={cls(
+            'w-full px-18 py-15 text-l1 caret-blue-7 outline-none',
+            numberLabel ? 'pl-40' : '',
+          )}
           onKeyDown={e => {
             if (e.key === 'Enter') {
               e.preventDefault();
             }
           }}
-          {...register}
-          {...rest}
+          onFocus={setFocus}
+          onBlur={setFocus}
         />
         {/*{value && reset && (*/}
         {/*  <button*/}
