@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import Modal from '@components/Modal';
 import strings from '@constants/strings';
 import RadioGroup from '@components/RadionGroup';
@@ -38,6 +38,12 @@ const ReportOptions = [
 
 function ReportModal({ isOpen, onClose }: ReportModalProps) {
   const [value, setValue] = useState('');
+
+  useEffect(() => {
+    return () => {
+      setValue('');
+    };
+  }, [isOpen]);
 
   const handleClick = () => console.log('신고 api');
 

@@ -5,12 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1a2471bd-a46b-4c3f-8a07-d9a0faf83952" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/components/Modal/ReportModal/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/Modal/TopicSuggestionModal/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/UserRow/index.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/BorderlessInput/index.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/Modal/AddGroupModal/index.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/UserFormInput/index.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Input/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Input/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Modal/ReportModal/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Modal/ReportModal/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Modal/TopicSuggestionModal/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Modal/TopicSuggestionModal/index.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/Modal/WritePostModal/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Modal/WritePostModal/index.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/Modal/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Modal/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/UserRow/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/UserRow/index.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/constants/strings.ts" beforeDir="false" afterPath="$PROJECT_DIR$/constants/strings.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.tsx" afterDir="false" />
     </list>
@@ -69,7 +73,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/components" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
@@ -88,8 +92,8 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/components" />
+      <recent name="$PROJECT_DIR$" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/public/image" />
@@ -132,7 +136,7 @@
       <workItem from="1652696481244" duration="452000" />
       <workItem from="1652751228230" duration="17605000" />
       <workItem from="1652779935380" duration="40000" />
-      <workItem from="1652780052676" duration="2256000" />
+      <workItem from="1652780052676" duration="5513000" />
     </task>
     <servers />
   </component>

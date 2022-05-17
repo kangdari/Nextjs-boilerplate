@@ -23,7 +23,6 @@ const Input = React.forwardRef<HTMLInputElement, InputProps>(
     // e를 넘길까?
     const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
       const { value, name } = e.target;
-      console.log(e.target);
       onChange(value, name);
     };
 

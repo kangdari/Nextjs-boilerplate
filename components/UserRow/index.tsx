@@ -5,9 +5,10 @@ import Button from '@components/Button';
 interface UserRowPros {
   buttonLabel?: string;
   buttonClick?: () => void;
+  rightComponent?: React.ReactNode;
 }
 
-function UserRow({ buttonLabel, buttonClick }: UserRowPros) {
+function UserRow({ buttonLabel, buttonClick, rightComponent }: UserRowPros) {
   // todo userHook => user nickname 추출
 
   return (
@@ -19,6 +20,7 @@ function UserRow({ buttonLabel, buttonClick }: UserRowPros) {
           {buttonLabel}
         </Button>
       )}
+      {rightComponent}
     </div>
   );
 }

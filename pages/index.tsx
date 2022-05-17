@@ -15,6 +15,7 @@ import strings from '@constants/strings';
 import WritePostModal from '@components/Modal/WritePostModal';
 import ReportModal from '@components/Modal/ReportModal';
 import TopicSuggestionModal from '@components/Modal/TopicSuggestionModal';
+import AddGroupModal from '@components/Modal/AddGroupModal';
 
 const Home: NextPage = () => {
   const [toggle, setToggle] = useState(false);
@@ -24,6 +25,7 @@ const Home: NextPage = () => {
   const [writePost, setWritePost] = useToggle();
   const [report, setReport] = useToggle();
   const [topic, setTopic] = useToggle();
+  const [group, setGroup] = useToggle();
   // const ref = useRef<HTMLButtonElement>(null);
   // const ref = useRef<HTMLTextAreaElement>(null);
   const { showModal, hideModal } = useGlobalModal();
@@ -61,15 +63,17 @@ const Home: NextPage = () => {
           headerButtonClick={() => console.log('header button click')}
         />
 
-        <WritePostModal isOpen={writePost} onClose={setWritePost} />
+        {writePost && <WritePostModal isOpen={writePost} onClose={setWritePost} />}
 
-        <ReportModal isOpen={report} onClose={setReport} />
+        {report && <ReportModal isOpen={report} onClose={setReport} />}
 
-        <TopicSuggestionModal isOpen={topic} onClose={setTopic} />
+        {topic && <TopicSuggestionModal isOpen={topic} onClose={setTopic} />}
 
-        <SignUpModal isOpen={singUp} onClose={setSignUp} closeIcon size='lg' />
+        {group && <AddGroupModal isOpen={group} onClose={setGroup} />}
 
-        <ToggleButton value={toggle} onToggle={setToggle} />
+        {singUp && <SignUpModal isOpen={singUp} onClose={setSignUp} closeIcon size='lg' />}
+
+        {toggle && <ToggleButton value={toggle} onToggle={setToggle} />}
 
         <div className='mb-10 flex w-700 items-end justify-between'>
           <Button onClick={handleClickConfirmModal} type='blue' size={56}>
@@ -94,8 +98,8 @@ const Home: NextPage = () => {
             TopicModal
           </Button>
 
-          <Button onClick={onClick} type='black' size={48}>
-            Button
+          <Button onClick={setGroup} type='black' size={48}>
+            AddGroupModal
           </Button>
 
           <Button onClick={onClick} type='black' size={32}>

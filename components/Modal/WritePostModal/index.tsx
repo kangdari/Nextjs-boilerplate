@@ -15,6 +15,7 @@ import useToggle from '@hooks/useToggle';
 import Vote from '@components/Vote';
 import Input from '@components/Input';
 import UserRow from '@components/UserRow';
+import BorderlessInput from '@components/BorderlessInput';
 
 interface WritePostModalProps {
   size?: 'sm' | 'lg';
@@ -287,13 +288,13 @@ function WritePostModal({ isOpen, onClose, rest }: WritePostModalProps) {
       return (
         <form className='relative flex-1 pb-52'>
           <div className='space-y-16'>
-            <div className='flex items-center'>
-              <AvatarOn className='mr-12' />
-              <p className='flex-1 text-h5'>User NickName</p>
-              <CheckToggleButton toggle={vote} onClick={setToggle} label={strings.AddVote} />
-            </div>
-            <input
-              type='text'
+            <UserRow
+              rightComponent={
+                <CheckToggleButton toggle={vote} onClick={setToggle} label={strings.AddVote} />
+              }
+            />
+
+            <BorderlessInput
               className='w-full text-h2 outline-none'
               {...qnaRegister('title', {
                 required: 'title is required',

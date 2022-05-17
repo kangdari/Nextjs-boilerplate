@@ -64,7 +64,7 @@ const Modal = ({
           ? 'absolute top-0 left-0 right-0 bottom-0 translate-x-0 translate-y-0 rounded-0'
           : 'absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]',
         isTablet ? 'w-full' : size === 'lg' ? 'w-560' : 'w-420',
-        'min-h-640',
+        size === 'lg' ? 'min-h-640' : 'min-h-320',
       )}
       isOpen={isOpen}
       onRequestClose={onClose}

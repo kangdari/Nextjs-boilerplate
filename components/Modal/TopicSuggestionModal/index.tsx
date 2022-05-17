@@ -1,9 +1,10 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Modal, { ModalProps } from '@components/Modal';
 import strings from '@constants/strings';
 import UserRow from '@components/UserRow';
 import TextArea from '@components/TextArea/TextArea';
 import { useForm } from 'react-hook-form';
+import BorderlessInput from '@components/BorderlessInput';
 
 interface TopicSuggestionModalProps extends ModalProps {}
 
@@ -16,10 +17,17 @@ function TopicSuggestionModal({ isOpen, onClose }: TopicSuggestionModalProps) {
   const {
     register,
     handleSubmit,
+    reset,
     formState: { errors },
   } = useForm<TopicSuggestionForm>();
 
   console.log(errors);
+
+  useEffect(() => {
+    return () => {
+      reset();
+    };
+  }, [isOpen]);
 
   const onValid = (data: TopicSuggestionForm) => console.log(data);
 
@@ -33,8 +41,7 @@ function TopicSuggestionModal({ isOpen, onClose }: TopicSuggestionModalProps) {
       headerButtonClick={handleSubmit(onValid)}>
       <form className='space-y-16'>
         <UserRow />
-        <input
-          type='text'
+        <BorderlessInput
           {...register('title', {
             required: strings.ErrorRequiredTitle,
           })}

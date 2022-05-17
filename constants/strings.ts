@@ -43,9 +43,13 @@ const strings = {
   TopicSuggestionTitlePlaceholder: '추천 토픽 제목을 작성해 주세요',
   TopicSuggestionContentsPlaceholder: '추가 토픽 설명이 있다면 입력해 주세요',
 
+  AddGroup: '그룹 추가',
+  AddGroupPlaceholder: '그룹 이름',
+
   // Validation Error
   ErrorRequiredTitle: '제목을 입력해 주세요',
   ErrorRequiredContents: '내용을 입력해 주세요',
+  ErrorRequiredGroupName: '그룹 이름을 입력해 주세요',
 
   Confirm: '확인',
   Submit: '제출하기',
