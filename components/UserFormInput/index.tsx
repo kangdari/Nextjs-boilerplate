@@ -33,7 +33,7 @@ const UserFormInput = React.forwardRef<HTMLInputElement, UserFormInputProps>(
           type='text'
           placeholder={placeholder}
           className={cls(
-            'w-full px-18 py-15 text-l1 caret-blue-7 outline-none',
+            'w-full border-none px-18 py-15 text-l1 caret-blue-7 outline-none',
             numberLabel ? 'pl-40' : '',
           )}
           onKeyDown={e => {

@@ -86,7 +86,13 @@ const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
         disabled={disabled}
         onClick={handleOnClick}
         {...rest}>
-        {children} {type === 'arrow' && <SmRight className='' />}
+        {children}{' '}
+        {type === 'arrow' && (
+          <SmRight
+            width={size === 56 || size == 48 ? 24 : 16}
+            height={size === 56 || size == 48 ? 24 : 16}
+          />
+        )}
       </button>
     );
   },

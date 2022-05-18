@@ -1,9 +1,11 @@
 import React, { useState } from 'react';
+import Image from 'next/Image';
 import Input from '@components/Input';
 import strings from '@constants/strings';
 import CheckBox from '@components/CheckBox';
 import { cls } from '@utils/index';
 import Button from '@components/Button';
+import SignUp from 'public/image/signUp.png';
 
 // todo 서버 데이터로
 const options = [
@@ -70,12 +72,13 @@ function AddiInfos({}: AddiInfosProps) {
       {/*  <Input numberLabel={3} full onChange={() => {}} value={''} placeholder={strings.NickName} />*/}
       {/*</div>*/}
 
-      <h2 className='mb-24 whitespace-pre-wrap text-h2'>{strings.AddiInfo_Title_3}</h2>
-      <div className='space-y-16'>
-        <CheckBox options={options} values={values} setValues={setValues} />
-      </div>
+      {/*<h2 className='mb-24 whitespace-pre-wrap text-h2'>{strings.AddiInfo_Title_3}</h2>*/}
+      {/*<div className='space-y-16'>*/}
+      {/*  <CheckBox options={options} values={values} setValues={setValues} />*/}
+      {/*</div>*/}
 
-      {/*<h2 className='mb-24 whitespace-pre-wrap text-h2'>{strings.AddiInfo_Title_4}</h2>*/}
+      <h2 className='mb-24 whitespace-pre-wrap text-h2'>{strings.AddiInfo_Title_4}</h2>
+      <Image src={SignUp} />
     </>
   );
 }

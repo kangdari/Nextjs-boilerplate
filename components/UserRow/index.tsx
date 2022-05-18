@@ -1,5 +1,5 @@
 import React from 'react';
-import { AvatarOn } from '@constants/icons';
+import { AvatarOff } from '@constants/icons';
 import Button from '@components/Button';
 
 interface UserRowPros {
@@ -13,7 +13,7 @@ function UserRow({ buttonLabel, buttonClick, rightComponent }: UserRowPros) {
 
   return (
     <div className='flex items-center'>
-      <AvatarOn className='mr-12' />
+      <AvatarOff className='mr-12' />
       <p className='flex-1 text-h5'>User NickName</p>
       {buttonLabel && (
         <Button className='ml-auto' type='grey' size={32} onClick={buttonClick}>

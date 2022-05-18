@@ -57,6 +57,7 @@ function SignUpModal({ isOpen, onClose, ...rest }: SignUpModalProps) {
       buttonComponent={
         logged && (
           <Button size='full' onClick={() => {}}>
+            {/* todo 상태에 따라서 워딩 수정 */}
             다음
           </Button>
         )
